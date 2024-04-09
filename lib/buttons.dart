@@ -6,17 +6,17 @@ class MyButton extends StatelessWidget {
   final VoidCallback buttonTapped;
 
   const MyButton({
-    Key? key,
+    super.key,
     required this.buttonText,
     required this.buttonImage,
     required this.buttonTapped,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
     return Card(
       margin: const EdgeInsets.all(5),
-      color: const Color.fromRGBO(60, 60, 60, 1),
+      color: const Color.fromARGB(255, 0, 0, 0),
       child: ListView(
         children: [
           Column(
@@ -28,7 +28,7 @@ class MyButton extends StatelessWidget {
               Text(
                 buttonText,
                 style: const TextStyle(
-                  color: Color.fromRGBO(195, 195, 195, 1),
+                  color: Color.fromRGBO(255, 255, 255, 1),
                 ),
               ),
             ],
