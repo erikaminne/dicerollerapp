@@ -68,17 +68,17 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromRGBO(32, 32, 32, 1),
+      backgroundColor: const Color.fromARGB(255, 255, 0, 0),
       appBar: AppBar(
-        title: const Text("Dice Roller"),
+        title: const Text("Dice Roller App"),
         centerTitle: true,
-        backgroundColor: const Color.fromRGBO(131, 150, 177, 1),
+        backgroundColor: const Color.fromRGBO(255, 255, 0, 0),
       ),
       bottomNavigationBar: Row(
         mainAxisAlignment: MainAxisAlignment.end,
         children: [
           Container(
-            color: const Color.fromRGBO(50, 50, 50, 1),
+            color: const Color.fromARGB(255, 0, 0, 0),
             child: IconButton(
               onPressed: () {
                 setState(() {
@@ -100,7 +100,7 @@ class _HomePageState extends State<HomePage> {
           ),
           const SizedBox(width: 20),
           Container(
-            color: const Color.fromRGBO(50, 50, 50, 1),
+            color: const Color.fromARGB(255, 0, 0, 0),
             child: IconButton(
               onPressed: () {
                 setState(() {
@@ -142,7 +142,7 @@ class _HomePageState extends State<HomePage> {
                 Text(
                   "Result: $resultWith",
                   style: const TextStyle(
-                    color: Color.fromRGBO(195, 195, 195, 1),
+                    color: Color.fromRGBO(255, 255, 255, 1),
                     fontWeight: FontWeight.bold,
                     fontSize: 30,
                   ),
@@ -150,7 +150,7 @@ class _HomePageState extends State<HomePage> {
                 Text(
                   "Result without extras: $result",
                   style: const TextStyle(
-                    color: Color.fromRGBO(195, 195, 195, 1),
+                    color: Color.fromRGBO(255, 255, 255, 1),
                     fontWeight: FontWeight.bold,
                     fontSize: 20,
                   ),
@@ -170,7 +170,7 @@ class _HomePageState extends State<HomePage> {
               child: const Text(
                 "Click to Clear!",
                 style: TextStyle(
-                  color: Color.fromRGBO(195, 195, 195, 1),
+                  color: Color.fromRGBO(255, 255, 255, 1),
                   decoration: TextDecoration.underline,
                 ),
               ),
